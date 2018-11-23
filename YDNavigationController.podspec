@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
   
   s.source_files = 'YDNavigationController/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YDNavigationController' => ['YDNavigationController/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'YDNavigationController' => ['YDNavigationController/Assets/YDNavigationController.bundle']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

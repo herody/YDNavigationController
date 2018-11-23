@@ -50,7 +50,16 @@ class YDSingleNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
             let containerVC = YDContainerController(topViewController: viewController, rootNavigationController: rootNavigationController!)
-            containerVC.topViewController.navigationItem.leftBarButtonItem = rootNavigationController?.backBarButtonItem
+            if rootNavigationController?.backBarButtonItem != nil {
+                containerVC.topViewController.navigationItem.leftBarButtonItem = rootNavigationController?.backBarButtonItem
+            } else {
+                var bundle = Bundle(for: YDNavigationController.self)
+                if let resourcePath = bundle.path(forResource: "YDNavigationController", ofType: "bundle"), let resourceBundle = Bundle(path: resourcePath) {
+                    bundle = resourceBundle
+                }
+                let image = UIImage(named: "back", in: bundle, compatibleWith: nil)
+                containerVC.topViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
+            }
             navigationController?.pushViewController(containerVC, animated: animated)
         } else {
             super.pushViewController(viewController, animated: animated)
