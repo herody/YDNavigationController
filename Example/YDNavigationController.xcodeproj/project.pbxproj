@@ -221,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RV249C4CNM;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RV249C4CNM;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -497,6 +499,7 @@
 			baseConfigurationReference = F9888ECEF334C101EFB62DB3 /* Pods-YDNavigationController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RV249C4CNM;
 				INFOPLIST_FILE = YDNavigationController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,6 +516,7 @@
 			baseConfigurationReference = 98A44527BBBEC430DD338E52 /* Pods-YDNavigationController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RV249C4CNM;
 				INFOPLIST_FILE = YDNavigationController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E886FA0F5F51DEB4C33CCF5 /* Pods-YDNavigationController_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RV249C4CNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -550,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 652F33E81A69991C60570AD0 /* Pods-YDNavigationController_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RV249C4CNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

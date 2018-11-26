@@ -53,9 +53,7 @@ class YDSingleNavigationController: UINavigationController {
             if rootNavigationController?.backBarButtonItem != nil {
                 containerVC.topViewController.navigationItem.leftBarButtonItem = rootNavigationController?.backBarButtonItem
             } else {
-                let bundle = Bundle(for: YDNavigationController.self)
-                let image = UIImage(named: "back.png", in: bundle, compatibleWith: nil)
-                containerVC.topViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
+                containerVC.topViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(handleBack))
             }
             navigationController?.pushViewController(containerVC, animated: animated)
         } else {
@@ -129,5 +127,11 @@ class YDSingleNavigationController: UINavigationController {
             return super.visibleViewController
         }
         return containerVC.topViewController
+    }
+    
+    // MARK: - event
+    
+    @objc func handleBack() {
+        popViewController(animated: true)
     }
 }
