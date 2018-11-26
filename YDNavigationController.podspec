@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YDNavigationController'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '自定义导航控制器'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source_files = 'YDNavigationController/Classes/**/*'
   
   s.resource_bundles = {
-    'YDNavigationController' => ['YDNavigationController/Assets/YDNavigationController.bundle']
+    'YDNavigationController' => ['YDNavigationController/Assets/YDNavigationController.bundle/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
