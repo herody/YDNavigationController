@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YDNavigationController'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '自定义导航控制器'
 
 # This description is used to generate tags and improve search results.
