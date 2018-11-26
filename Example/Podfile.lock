@@ -1,5 +1,5 @@
 PODS:
-  - YDNavigationController (0.1.5)
+  - YDNavigationController (1.0.0)
 
 DEPENDENCIES:
   - YDNavigationController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YDNavigationController: 0ac819bc2f628b1e39914a5ef613afed1779610b
+  YDNavigationController: 7a98bfc8935040ee2c46c5e274cad5117f80d6a4
 
 PODFILE CHECKSUM: d47b60bc2fe8a8c9ca0d228f7496c3b5f6a06a01
 

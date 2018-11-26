@@ -53,7 +53,8 @@ class YDSingleNavigationController: UINavigationController {
             if rootNavigationController?.backBarButtonItem != nil {
                 containerVC.topViewController.navigationItem.leftBarButtonItem = rootNavigationController?.backBarButtonItem
             } else {
-                containerVC.topViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(handleBack))
+                let image = UIImage(named: "back", in: Bundle(for: YDNavigationController.self), compatibleWith: nil)
+                containerVC.topViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleBack))
             }
             navigationController?.pushViewController(containerVC, animated: animated)
         } else {
